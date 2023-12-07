@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+
+
+.body{
+    margin: 0;
+    padding: 0;
+    background-color: #1A187A;
+}
+
+.navbar {
+    
+    background-color: #1A187A;
+    width: 1440px;
+    height: 100px;
+   
+}   
+
+ .navbar-nav .nav-link.active{
+    font-size: 22px;
+    font: #ffff;
+}
+.navbar-nav .nav-link {
+    font-size: 22px; 
+    color: white; 
+  }
+
+ 
+  .navbar-nav .nav-link:hover {
+    color: #ff0000; 
+  }
+.search{
+    padding-left: 130px;
+    align-items: center;
+}
+
+.navbar-toggler {
+    font-size: 100px; 
+    padding: 30px 15px;
+    font-weight: bold;
+    color: blue;
+  }
+
+  .navbar-toggler-icon {
+    width: unset; 
+    height: unset; 
+    background-color: white;
+  }
+
+  .logo {
+    
+    width: 255px;
+    height: 52px;
+    padding-left: 50px;
+}
+
+.cart{
+    padding-left: 20px;
+    color: white;
+    
+}
+.user{
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+    
+} 
+
+
+@media only screen and (max-width: 375px) {
+    .navbar-nav .nav-link {
+        display: none;
+    }
+    .navbar{
+        height: 150px;
+    }
+
+    .cart,
+    .user {
+        display: none;
+    }
+
+    .search {
+        display: none;
+    }
+    .logo{
+        padding-left: 100px;
+        width: 479px;
+        height: 108.35px;
+    }
+    .navbar-toggler{
+        width: 50px;
+        height: 150px;
+        margin-right: 100px;
+    }
+    .navbar-toggler-icon {
+        font-size: 3em;
+      }
+}
+
+
+
+/* For Banner section */
+
+
+.home .home-banner-1,
+.home .home-banner-2{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 90% center;
+    min-height: 650px;
+    position: relative;
+    
+}
+.home{
+    background: linear-gradient(
+        to right,
+        #f5cffa,
+        #e6f8f6,
+        #818cf9
+    );
+}
+
+.home .home-banner-1{
+    background-image: url('../Resources/Iphone Image.png');
+    background-size: 400px 650px;
+    
+}
+.home .home-banner-2{
+    background-image: url('../Resources/Iphone-photo-removebg-preview.png');
+    background-size: 506px 650px;
+    
+}
+
+.home .home-banner .home-banner-text{
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-110%, -50%);
+
+}
+
+.home .home-banner .home-banner-text h1{
+    font-size: 6rem;
+}
+
+
+:root {
+    --bg-danger: #ff0000;
+    --text-danger: #ff0000;
+  }
+  
+
+  .home .carousel-indicators [data-bs-target] {
+    background-color: var(--bg-danger);
+    width: 2.5rem;
+    height: 0.313rem;
+  }
+  
+ 
+  
+  .home .slider-icon {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--text-danger);
+  }
+  
+
+  
+/* For Grid Section */
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 0px;
+    height: 100vh; 
+    width: 100px;
+   
+}
+
+.left-column {
+   
+    width: 720px;
+    height: 700px;
+   
+    margin-top: -40px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr); 
+    
+    margin-left: -114px;
+}
+
+.right-column {
+    width: 720px;  
+    height: 610px; 
+    align-items: center;
+    background-color: #ededed;
+    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   
+}
+.row1{
+   
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.row2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.column1{
+    margin-left: 40px;
+    height: 100vh;
+    
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.column2{
+    height: 100px;
+    
+}
+.RC-1{
+    
+    height: 20px;
+    flex: 1;
+    margin-left: 40px;
+    margin-top: 100px;
+   
+}
+.headphone{
+    margin-top: 80px;
+    margin-right: 80px;
+}
+.text{
+    color: white;
+    margin-right: 80px;
+    
+}
+.RC-2{
+    background-color:  #ffffff;
+    text-align: left;
+    margin-top: 80px;
+    margin-left: -62px;
+    font-size: larger;
+    flex: 1;
+    
+}
+
+.RC2-1{
+    background-color: #adc2d7;
+    height: 300px;
+        
+}
+.ipod{
+    
+    width: 280px;
+    margin-left: 5px; 
+    margin-top: -10px; 
+
+}
+.RC2-2{
+    background-color: #adc2d7;
+    flex: 0;
+    height: 300px;
+    text-align: center;
+    align-items: center;
+   
+}
+.appt-btn{
+    background-color: #171495;
+    width: 190px;
+    height: 55px;
+    padding: auto;
+    align-items: center;
+    font-size: 24px;
+    border-radius: 10px 10px 10px 10px;
+    color: white;
+}
+.Ipad{
+    width: 850px;
+    margin-left: -65px;
+    margin-top: -20px;
+   
+}
+.macbook{
+    width: 829px;
+    height: 502px;
+    margin-top: -200px;
+}
+
+/* catagory section */
+.container-1{
+    margin-top: 50px;
+    height: 100vh;
+    margin-left: 70px;
+    
+    display: grid;
+    grid-template-rows: repeat(6,1fr);
+    text-align: center; 
+}
+.ROW {
+    display: flex; 
+    justify-content: center; 
+    margin-top: -40px;
+}
+.headings{
+ margin-right: 980px;
+}
+  .services {
+    flex: 1;
+    text-align: center; 
+    font-size: 50px; 
+    margin-bottom: 10px;
+    flex: 1;
+  
+    margin: 0 10px;
+    padding: 10px;
+    background-color: #ededed;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+  }
+  
+/* card section */
+.price{
+    margin-left: 80px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.appt-btn-1{
+    background-color: black;
+    width: 250px;
+    height: 55px;
+    padding: auto;
+    align-items: center;
+    font-size: 24px;
+    border-radius: 10px 10px 10px 10px;
+    color: white;
+    align-items: center;
+    margin-left : 10px;
+    margin-top: -30px;
+}
+.card-text{
+    text-align: center;
+    font-weight: bold;
+}
+.card-img-top{
+    margin-top: 40px;
+}
+.card-section{
+    display: grid;
+    display: flex;
+    grid-template-rows: repeat(4,1fr);
+    margin-top: -1px;
+    margin-left: 85px;
+    width: 1440px;
+    height: 560px;
+    
+}
+
+
+
+.Card {
+    
+    background-color: white;
+    color: #fff;
+    margin-top: -350px;
+    margin-left: 84px;
+    
+  }
+
+.tag-container{
+    display: grid;
+    display: flex;
+    grid-template-rows: repeat(3,1fr);
+    gap: 20px;
+    font-size: 25px;
+    font-weight: 15px;
+    color: black;
+}
+
+/* footer section */
+
+.footer {
+    width: 1448px;
+    height: 472px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #958ad4; 
+    padding: 20px;
+    margin-top: 50px;
+  }
+
+
+
+  .left img {
+    width: 421px; 
+    height: 342px;
+    margin-left: -120px;
+  }
+
+  .middle {
+    flex: 2; 
+    text-align: center;
+    margin-left: 130px;
+  }
+
+  .sale {
+    color: white; 
+    font-weight: bolder;
+    font-size: 80px;
+    
+  }
+  .sale-bold {
+    color: #25177b; 
+    font-weight: bolder;
+    font-size: 80px;
+  }
+
+  .feature {
+    color: white; 
+    margin-top: 10px;
+  }
+
+.right img{
+    width: 600px;
+    height: 357px;
+    background-color: #958ad4; 
+    margin-right: -100px;
+
+}
+
+
+/* footer-2 */
+
+.footer-2 {
+    background-color: #0E071B; /* Set the background color for the footer */
+    color: #fff; /* Set the text color to white */
+    padding: 40px; /* Add padding for better spacing */
+  }
+
+  .footer-container {
+    display: flex;
+    
+  }
+
+  .logo-box img {
+    width: 250px; /* Set the width of the logo image as per your requirement */
+  }
+
+  .social-icon {
+    display: flex;
+    margin-left: 30px;
+  }
+  
+  .social-icon i {
+    margin-left: 10px;
+    color: #fff;
+    font-size: 25px;
+  }
+  
+  .footer-title {
+    font-size: 26px; /* Set the font size for footer titles */
+    margin-bottom: 10px; /* Add space between titles and the content */
+  }
+
+  .decorate {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 200px;
+    margin-top: 2px; /* Add space between the sections */
+  }
+
+  .Useful-links,
+  .contact {
+    justify-content: space-between;
+    margin-left: 20px;
+   
+  }
+
+  .Useful-links p,
+  .contact p {
+    margin: 5px 0 ; /* Add space between each link */
+  }
